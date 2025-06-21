@@ -9,6 +9,8 @@ const PORT = process.env.PORT || 8080;
 
 app.use(express.json());
 
+console.log(process.env.NEWS_API_KEY); // <== Add this line to check if the API key is loaded
+
 // Your backend API route
 app.get('/api/news', async (req, res) => {
     console.log("🚀 Received request to /api/news");  // <== Add this line
